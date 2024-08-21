@@ -7,17 +7,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="todo-app">
-            <h2>To-Do List <img src="imgs/list.png"></h2>
-            <div class="row">
-                <input type="text" id="input-box" placeholder="Add your text">
-                <button onclick="addTask()">Add</button>
+    <div class="banner">
+        <div class="navbar">
+            <img src="imgs/logo.png" class="logo">
+            <h4>“Today is the day you’re going to slay your to-do list and bring home a major win.”</h4>
+        </div>
+        <div class="container">
+            <div class="todo-app">
+                <h2>Today's goals :</h2>
+                <div class="row">
+                    <input type="text" id="input-box" placeholder="Add your text">
+                    <button onclick="addTask()">Add</button>
+                </div>
+                <ul id="Listcontainer">
+                </ul>
             </div>
-            <ul id="Listcontainer">
-            </ul>
         </div>
     </div>
+    
     <script src="script.js"></script>
 </body>
 </html>
